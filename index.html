@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="navbar grid grid-flow-col text-[14px] gap-6 justify-items-center px-4 py-3 items-center ">
+        <!--Menubar-->
+        <div class="flex  items-baseline md:order-2 p-2 gap-3">
+            <div class="hamburger inline-block p-[2px] cursor-pointer md:hidden">
+                <div class="line h-[1px] w-5 my-1 bg-black"></div>
+                <div class="line h-[1px] w-5 my-1 bg-black"></div>
+                <div class="line h-[1px] w-5 my-1 bg-black"></div>
+            </div>
+            <div class="search md:hidden"><button><img src="icons/R.png" alt="" width="20px" height="16px"></button>
+            </div>
+        </div>
+        <!--Microsoft icon-->
+        <div class="logo flex md:order-1 gap-4 items-center">
+            <div><img src="icons/RE1Mu3b.png" alt="" width="110px"></div>
+            <div
+                class="features  absolute  bg-slate-300 inset-0 -translate-x-80 translate lg:static w-fit lg:w-auto lg:mx-4 lg:space-x-4 lg:flex lg:translate-x-0 lg:bg-white">
+                <div class="fitem">Microsoft 365 </div>
+                <div class="fitem">Teams</div>
+                <div class="fitem">Windows</div>
+                <div class="fitem">Surface </div>
+                <div class="fitem">Xbox </div>
+                <div class="fitem">Deals </div>
+                <div class="fitem">Small Business</div>
+                <div class="fitem">Support </div>
+            </div>
+        </div>
+        <!--Cartand account-->
+        <div class="cart text-center md:order-3 flex gap-6 p-2">
+            <div class="search hidden md:flex  gap-2 items-center"> <a  href="">Search</a><img src="icons/R.png" alt="" width="20px" height="16px"></div>
+             <div class="hidden  md:flex gap-2 items-center">  All Microsoft</div>
+            <div class="flex gap-2 items-center" ><a class="hidden md:block" href="">Cart</a><img src="icons/cart.svg" alt="" width="20px" height="16px"></div>
+            <div class="flex gap-2 items-center"><a class="hidden md:block" href="">Sign In</a><img src="icons/3631618.png" alt="sign in" width="20px"></div>
+
+        </div>
+    </div>
+    <!--1st slider-->
+    <div class="slider flex flex-col-reverse md:flex-row md:bg-[#f2f2f2] ">
+        <div class="left flex flex-col justify-center md:items-baseline py-3 md:mx-20">
+            <h1 class="text-2xl md:text-4xl text-left font-semibold mx-5 px-2 py-2">Make this year a game changer</h1>
+            <p class="min-w-fit text-left mx-5">Experience a new class of next-gen performance with Xbox Series X and
+                Xbox
+                Series S </p>
+            <div class="btn justify-items-center">
+                <button class="bg-[#0067b8] text-white w-fit px-3 py-2 mx-5 my-8 selection:border-4 selection:border-dotted selection:border-white  ">Xbox Series X</button>
+                <a class="text-[#0067b8] font-semibold" href=""> Xbox Series S &#10095;</a>
+            </div>
+
+        </div>
+        <div class="right bg-[#f2f2f2] mt-0">
+            <img class="lg:h-[400px]" src="images/xbox6.png" alt="pc">
+        </div>
+    </div>
+    <!--2nd slider-->
+    <div class="slider flex flex-col-reverse md:flex-row md:bg-[#f2f2f2] hidden">
+        <div class="left">
+            <img src="images/pc2.png" alt="pc">
+        </div>
+        <div class="right flex flex-col justify-center md:items-baseline py-3 md:mx-20">
+            <h1 class="text-2xl md:text-4xl text-left font-semibold mx-5 px-2 py-2">Save on Surface</h1>
+            <p class="min-w-fit text-left mx-5">Find a great deal on select Surface devices built for all the ways you
+                create, work, play, and connect.
+                If you have questions before you buy a Surface, book a free shopping appointment. </p>
+            <div class="btn justify-items-center">
+                <button class="bg-blue-700 text-white w-fit px-3 py-2 mx-5 my-8 cursor-pointer">Shop Surface
+                    deals</button>
+                <a class="text-blue-700 font-semibold cursor-pointer" href="">Book an appointment &#10095;</a>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <!--Next previous-->
+    <div class="next flex justify-center space-x-2 items-center invisible md:visible">
+        <button class="left text-3xl">&#10094;</button>
+        <div style="text-align:center">
+            <span class="dot inline-block rounded w-2 h-2   bg-black" onclick="currentSlide(1)"></span>
+            <span class="dot inline-block rounded w-2 h-2 border-black border-2 bg-white"
+                onclick="currentSlide(2)"></span>
+        </div>
+
+        <button class="right text-3xl">&#10095;</button>
+    </div>
+    <!--promo1-->
+    <div
+        class="promo space-x-8 sm:grid sm:grid-cols-2 md:flex justify-center mx-10 my-10 md:static font-semibold text-blue-700 underline">
+        <div class=" flex flex-col ml-5 md:ml-0 justify-center items-center "><img src="icons/ic1.png" alt=""><a
+                class="my-4" href="">Choose your Microsoft 365</a> </div>
+        <div class=" flex flex-col justify-center items-center"><img src="icons/ic2.png" alt=""><a class="my-4"
+                href="">Shop Surface devices</a> </div>
+        <div class=" flex flex-col justify-center items-center"><img src="icons/ic3.png" alt=""><a class="my-4"
+                href="">Buy Xbox games and consoles</a> </div>
+        <div class=" flex flex-col justify-center items-center"><img src="icons/ic4.png" alt=""><a class="my-4"
+                href="">Shop for students</a> </div>
+        <div class=" flex flex-col justify-center items-center"><img src="icons/ic5.png" alt=""><a class="my-4"
+                href="">Find your next PC</a> </div>
+        <div class=" flex flex-col justify-center items-center"><img src="icons/ic6.png" alt=""><a class="my-4"
+                href="">Shop Business</a></div>
+    </div>
+
+    <!--promo2-->
+    <div class="promo2 flex flex-col sm:grid sm:grid-cols-2 justify-items-center lg:grid-cols-4 gap-6 mx-4 sm:mx-16">
+        <div class="flex flex-col items-center sm:items-baseline py-5 sm:py-10 ">
+            <div class=" overflow-hidden max-w-lg  sm:max-w-sm ">
+                <img src="images/promo2.1.png" alt="">
+            </div>
+            <div class="px-4 py-4 ">
+                <div class="font-semibold text-3xl mb-3">Select Surface Go 3, up to $50 off </div>
+                <p>Complete your study setup and save big when you bundle the most powerful Pro with a sleek, compact
+                    Surface
+                    keyboard. Select devices starting at $899.99.</p>
+                <div class="pt-6 font-semibold text-[#0067b8] hover:underline cursor-pointer ">
+                    <a href="">Shop now &#10095;</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center sm:items-baseline py-5 sm:py-10">
+            <div class="overflow-hidden max-w-md  sm:max-w-sm ">
+                <img src="images/promo2.2.png" alt="">
+            </div>
+            <div class="px-4 py-4 ">
+                <div class="font-semibold text-3xl mb-3">Surface Pro 8 (i5) + Surface Pro Keyboard </div>
+                <p>Optimized for student needs—note-taking, sketching, Windows 11, and more. Starting at $499.99. </p>
+                <div class="pt-6 font-semibold text-[#0067b8] hover:underline cursor-pointer">
+                    <a href="">Shop Surface Go 3 &#10095;</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center sm:items-baseline py-5 sm:py-10">
+            <div class=" overflow-hidden max-w-md  sm:max-w-sm ">
+                <img src="images/promo2.3.png" alt="">
+            </div>
+            <div class="px-4 py-4 ">
+                <div class="font-semibold text-3xl mb-3">Surface Pro 8 (i5) + Surface Pro Keyboard </div>
+                <p>Experience a new class of next-gen performance with Xbox Series X and Xbox Series S.</p>
+                <div class="grid grid-flow-col gap-2 pt-6 font-semibold text-[#0067b8]">
+                    <a class=" hover:underline cursor-pointer" href="">Xbox Series X &#10095;</a>
+                    <a class=" hover:underline cursor-pointer" href="">Xbox Series S &#10095;</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center sm:items-baseline py-5 sm:py-10">
+            <div class="box overflow-hidden max-w-md  sm:max-w-sm ">
+                <img src="images/promo2.4.png" alt="">
+            </div>
+            <div class="px-4 py-4 ">
+                <div class="font-semibold text-3xl mb-3">Never miss a beat</div>
+                <p>Discover the latest audio from Surface, featuring ultra-comfortable design, immersive sound, and
+                    all-day
+                    battery.</p>
+                <div class=" grid grid-flow-row gap-2 pt-6 font-semibold text-[#0067b8] hover:underline cursor-pointer">
+                    <a href="">Shop Surface Earbuds &#10095;</a>
+                    <a href="">Shop Surface Headphones 2 &#10095;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--promo3-->
+
+    <div
+        class="flex flex-col-reverse md:grid md:grid-cols-2 mt-5 sm:mt-10 mb-14  sm:mx-5 lg:mx-[84px] py-5 md:py-10 justify-center items-center md:bg-[#f2f2f2]">
+        <div class="px-4 lg:px-12 py-4 lg:mx-10 sm:items-baseline">
+            <div class="font-semibold text-4xl mb-4">Save up to $500 on select PCs </div>
+            <p>Discover great deals on powerful devices to help you study smarter and relax after class </p>
+            <div class=" pt-6  font-semibold text-[#0067b8] hover:underline cursor-pointer">
+                <button class="bg-[#0067b8] px-4 py-2 text-white cursor-pointer hover:bg-[#08245f]">Shop PC
+                    deals</button>
+            </div>
+        </div>
+        <div class="overflow-hidden max-w-md sm:max-w-lg mx-0">
+            <img src="images/lp35.png" alt="">
+        </div>
+    </div>
+    <!--promo4-->
+    <div class="headr text-2xl sm:text-4xl mx-4 font-semibold">
+        For business
+    </div>
+    <div class="promo4 flex flex-col sm:grid sm:grid-cols-2 justify-items-center lg:grid-cols-4 gap-6 mx-4 sm:mx-16">
+        <div class="flex flex-col items-center sm:items-baseline py-5 sm:py-10">
+            <div class="overflow-hidden max-w-md  sm:max-w-sm ">
+                <img src="images/business1.webp" alt="">
+            </div>
+            <div class="px-4 py-4 ">
+                <div class="font-semibold text-3xl mb-3">Save up to $450 on select Surface Pro 8 for Business </div>
+                <p>Get unprecedented levels of performance and versatility on a 13-inch screen. Available with Windows
+                    11.
+                    Questions? Book an online consultation. </p>
+                <div class=" grid grid-flow-row gap-2 pt-6 font-semibold text-[#0067b8]">
+                    <a class="hover:underline cursor-pointer" href="">Shop now &#10095;</a>
+                    <a class="hover:underline cursor-pointer" href="">Book a consultation </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center sm:items-baseline py-5 sm:py-10">
+            <div class="overflow-hidden max-w-md  sm:max-w-sm ">
+                <img src="images/business2.webp" alt="">
+            </div>
+            <div class="px-4 py-4 ">
+                <div class="font-semibold text-3xl mb-3">Get Microsoft Teams for free </div>
+                <p>Online meetings, chat, and shared cloud storage—all in one place.</p>
+                <div class="pt-6 font-semibold text-[#0067b8] hover:underline cursor-pointer">
+                    <a class=" hover:underline cursor-pointer" href="">Sign up for free &#10095;</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center sm:items-baseline py-5 sm:py-10">
+            <div class=" overflow-hidden max-w-md  sm:max-w-sm ">
+                <img src="images/business3.webp" alt="">
+            </div>
+            <div class="px-4 py-4 ">
+                <div class="font-semibold text-3xl mb-3">Microsoft 365 for business </div>
+                <p>Stay a step ahead with powerful apps for productivity, connection, and security.
+                    Make an appointment with an expert to determine the best solution for your business.</p>
+                <div class="grid grid-flow-col gap-2 pt-6 font-semibold text-[#0067b8]">
+                    <a class=" hover:underline cursor-pointer" href="">Shop now &#10095;</a>
+                    <a class=" hover:underline cursor-pointer" href="">Book a consultation &#10095;</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center sm:items-baseline py-5 sm:py-10">
+            <div class="box overflow-hidden max-w-md  lg:max-w-sm ">
+                <img src="images/business4.webp" alt="">
+            </div>
+            <div class="px-4 py-4 ">
+                <div class="font-semibold text-3xl mb-3">Thrive in a hybrid world</div>
+                <p>Discover tools, resources, and strategies to help your employees succeed in the new world of flexible
+                    work.</p>
+                <div class=" grid grid-flow-row gap-2 pt-6 font-semibold text-[#0067b8] hover:underline cursor-pointer">
+                    <a href="">Learn more &#10095;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--promo5-->
+    <div class="promo5 flex flex-col-reverse md:text-white md:flex-row md:bg-[#030404] hidden">
+        <div class="left flex flex-col justify-center md:items-baseline py-3 md:mx-20">
+            <h1 class="text-2xl md:text-4xl text-left font-semibold mx-5 px-2 py-2">Can an alphabet save a culture?
+            </h1>
+            <p class="min-w-fit text-left mx-5">For 40 million Fulani people, seeing their ancient language come to life
+                as
+                a new alphabet (ADLaM) and typeface on Windows means the ability to communicate digitally and connect
+                globally</p>
+            <div class="btn justify-items-center">
+                <button class="bg-blue-700 text-white w-fit px-3 py-2 mx-5 my-8">Discover ADLaM</button>
+            </div>
+
+        </div>
+        <div class="right">
+            <img src="images/languange2.jpeg" alt="pc">
+        </div>
+    </div>
+    <div class="promo5 grid lg:grid-cols-2 lg:mx-20 lg:bg-[url('images/promo5.2.png')] lg:h-[446px]">
+        <div class="right lg:hidden">
+            <img src="images/promo5.3.png" alt="pc">
+        </div>
+        <div
+            class="left flex flex-col  lg:py-6 items-baseline my-4 lg:my-8 lg:ml-16 lg:mr-8 bg-white lg:bg-inherit text-black lg:text-white lg:max-w-md ">
+            <h1 class="text-2xl lg:text-4xl  font-semibold ml-5 mr-[0.25rem] pl-[-0.5rem] py-6">Hispanic Heritage Month
+                2022
+            </h1>
+            <p class="min-w-fit  mx-5">This month, we celebrate the contributions, legacies,
+                and achievements of the community, and highlight the voices that bridge a rich and proud history with a
+                vibrant and dynamic future </p>
+            <div class="btn justify-items-center">
+                <button class="bg-[#0067b8] text-white w-fit px-3 py-2 mx-5 my-8">Read the stories</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--next previous-->
+    <div class="next flex justify-center space-x-2 items-center ">
+        <button class="left text-3xl">&#10094;</button>
+        <div style="text-align:center">
+            <span class="dot inline-block rounded w-2 h-2   bg-black" onclick="currentSlide(1)"></span>
+            <span class="dot inline-block rounded w-2 h-2 border-black border-2 bg-white"
+                onclick="currentSlide(2)"></span>
+            <button class="right text-3xl">&#10095;</button>
+        </div>
+    </div>
+
+    <!--follow links-->
+    <div
+        class="follow mx-16 lg:mx-20 mt-5 lg:mt-10 mb-10 lg:mb-28 bg-white grid grid-flow-col space-x-4 w-fit items-center">
+        <h1>Follow Microsoft</h1>
+        <a href=""><img width="32px" height="32px" src="icons/Facebook 2x.avif" alt=""></a>
+        <a href=""><img width="32px" height="32px" src="icons/Twitter 2x.webp" alt=""></a>
+        <a href=""><img width="32px" height="32px" src="icons/Linkedin 2x.avif" alt=""></a>
+    </div>
+    <!--footer-->
+    <div class="footer bg-[#f2f2f2]">
+        <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6  gap-4 mb-0 mx-6 ">
+            <div class="link1 flex flex-col gap-2 mt-8 mb-6 text-[#616161]">
+                <h1 class="font-semibold">What's new</h1>
+                <div class="flex flex-col gap-3 text-[11px]">
+                    <a href="">Surface Laptop Go 2</a>
+                    <a href="">Surface Pro 8</a>
+                    <a href="">Surface Laptop Studio</a>
+                    <a href="">Surface Pro X</a>
+                    <a href="">Surface Go 3</a>
+                    <a href="">Surface Duo 2</a>
+                    <a href="">Surface Pro 7+</a>
+                    <a href="">Windows 11 apps</a>
+                </div>
+            </div>
+            <div class="link2 flex flex-col gap-2 mt-8 mb-6 text-[#616161]">
+                <h1>Microsoft Store</h1>
+                <div class="flex flex-col gap-3 text-[11px]">
+                    <a href="">Account profile</a>
+                    <a href="">Download Center</a>
+                    <a href="">Microsoft Store support</a>
+                    <a href="">Returns</a>
+                    <a href="">Order tracking</a>
+                    <a href="">Virtual workshops and training</a>
+                    <a href="">Microsoft Store Promise</a>
+                    <a href="">Flexible Payments </a>
+                </div>
+            </div>
+            <div class="link2 flex flex-col gap-2 mt-8 mb-6 text-[#616161]">
+                <h1>Education</h1>
+                <div class="flex flex-col gap-3 text-[11px]">
+                    <a href="">Microsoft in education</a>
+                    <a href="">Devices for education</a>
+                    <a href="">Microsoft Teams for Education</a>
+                    <a href="">Microsoft 365 Education</a>
+                    <a href="">Education consultation appointment</a>
+                    <a href="">Educator training and development</a>
+                    <a href="">Deals for students and parents</a>
+                    <a href="">Azure for students</a>
+                </div>
+            </div>
+            <div class="link2 flex flex-col gap-2 mt-8 mb-6 text-[#616161]">
+                <h1>Business</h1>
+                <div class="flex flex-col gap-3 text-[11px]">
+                    <a href="">Microsoft Cloud</a>
+                    <a href="">Microsoft Security</a>
+                    <a href="">Dynamics 365</a>
+                    <a href="">Microsoft 365</a>
+                    <a href="">Microsoft Power Platform</a>
+                    <a href="">Microsoft Teams</a>
+                    <a href="">Microsoft Industry</a>
+                    <a href="">Small Business</a>
+                </div>
+            </div>
+            <div class="link2 flex flex-col gap-2 mt-8 mb-6 text-[#616161]">
+                <h1>Developer & IT</h1>
+                <div class="flex flex-col gap-3 text-[11px]">
+
+                    <a href=""> Azure </a>
+                    <a href=""> Developer Center</a>
+                    <a href=""> Documentation</a>
+                    <a href=""> Microsoft Learn</a>
+                    <a href=""> Microsoft Tech Community</a>
+                    <a href=""> Azure Marketplace</a>
+                    <a href=""> AppSource</a>
+                    <a href=""> Visual Studio</a>
+                </div>
+            </div>
+            <div class="link2 flex flex-col gap-2 mt-8 mb-6 text-[#616161]">
+                <h1>Company</h1>
+                <div class="flex flex-col gap-3 text-[11px]">
+
+                    <a href="">Career</a>
+                    <a href="">About Microsoft</a>
+                    <a href="">Company news</a>
+                    <a href="">Privacy at Microsoft</a>
+                    <a href="">Investors</a>
+                    <a href="">Diversity and inclusion</a>
+                    <a href="">Accessibility</a>
+                    <a href="">Sustainability</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
